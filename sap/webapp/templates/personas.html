@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Administación de Personas</title>
+</head>
+<body>
+<h1> Sistema de Administación de Personas
+<p>Cantidad de personas: {{cantidad}}</p>
+{{personas}}
+
+{% for persona in personas %}
+    <p>{{persona.nombre}} {{persona.apellido}}</p>
+{% endfor %}
+</body>
+</html>
